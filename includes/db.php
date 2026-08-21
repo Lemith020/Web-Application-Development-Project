@@ -7,6 +7,9 @@ $db_name = getenv('DB_NAME') ?: 'sun_sea_restaurant';
 $conn = mysqli_connect($host, $db_user, $db_pass, $db_name);
 
 if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+    error_log('DB connection failed: ' . mysqli_connect_error());
+    http_response_code(500);
+    exit('Database connection failed.');
 }
+mysqli_set_charset($conn, 'utf8mb4');
 ?>

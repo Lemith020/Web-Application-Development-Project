@@ -1,0 +1,25 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+body { background: #f9f9f7; color: #222; }
+.site-header { display: flex; justify-content: space-between; align-items: center; background: #0b3d59; padding: 15px 40px; color: #fff; }
+.site-header .logo { font-size: 22px; font-weight: bold; }
+.site-header nav a { color: #fff; margin-left: 20px; text-decoration: none; }
+.hero { text-align: center; padding: 50px 20px; background: linear-gradient(120deg, #0b3d59, #1c7293); color: #fff; }
+.hero h1 { font-size: 36px; }
+.filter-bar { display: flex; gap: 15px; justify-content: center; padding: 20px; flex-wrap: wrap; }
+.filter-bar input, .filter-bar select { padding: 10px; border-radius: 4px; border: 1px solid #ccc; }
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; padding: 20px 40px; }
+.menu-card { background: #fff; border-radius: 8px; padding: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.menu-card-img { width: 100%; height: 100px; background: #1c7293; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 36px; border-radius: 6px; }
+.menu-card h3 { margin-top: 10px; }
+.menu-card .desc { color: #666; font-size: 14px; margin: 5px 0; }
+.menu-card .tag { font-size: 12px; color: #1c7293; }
+.menu-card .price { font-weight: bold; margin: 8px 0; }
+.menu-card button { width: 100%; padding: 8px; background: #0b3d59; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+.site-footer { text-align: center; padding: 20px; color: #888; }
+.cart-table { width: 100%; margin: 20px 0; border-collapse: collapse; }
+.cart-table th, .cart-table td { padding: 10px; border-bottom: 1px solid #eee; text-align: left; }
+.checkout-form { max-width: 450px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 8px; }
+.checkout-form label { display: block; margin-top: 12px; font-weight: bold; }
+.checkout-form input, .checkout-form select { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+.checkout-form button { margin-top: 20px; padding: 10px 20px; background: #0b3d59; color: #fff; border: none; border-radius: 4px; cursor: pointer; width: 100%; }
+.success-box { text-align: center; padding: 60px 20px; }
